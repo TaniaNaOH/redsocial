@@ -1,8 +1,20 @@
 #user_photo{
   margin: 0 auto;
   margin-top: 5vh;
+  height: 50vh;
+  border: 1px solid black;
+}
+#photo-news{
+  margin: 0 auto;
+  margin-top: 5vh;
   height: 30vh;
   border: 1px solid black;
+}
+#photo-friends{
+  margin-top: 5vh;
+  height: 50vh;
+  border: 1px solid black;
+  width: 90%;
 }
 .user{
   text-align: center;
@@ -62,4 +74,19 @@ hr{
 .file-s{
   margin-left: 8vh;
   margin-right: 5vh;
+}
+.card-users{
+  margin-top: 15vh;
+  margin-left: 5vh;
+  margin-right: 10vh;
+  width: 90%;
+}
+.another-user{
+  float: right;
+}
+.card-friends{
+  margin-top: 15vh;
+  margin-left: 5vh;
+  margin-right: 10vh;
+  width: 50%;
 }

@@ -6,16 +6,17 @@
     <title>MI RED SOCIAL</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
     <nav class="nav-extended background-header">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">restaurant</i></a>
+          <a href="newsfeed.html" class="brand-logo">Logo</a>
+          <a href="perfil.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">restaurant</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="badges.html">Mi perfil</a></li>
+            <li><a href="perfil.html">Mi perfil</a></li>
             <li><a href="collapsible.html">Salir</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
@@ -34,123 +35,63 @@
         </div>
     </nav>
 
-    <div id="test1" class="hide-on-small-only hide-on-med-only">
-      <div class="user col l12">
-        <img id="user_photo" class="responsive-img" src="../assets/images/chef.jpg">
-        <p>Tania</p>
-        <p>Amante de todo tipo de Comida</p>
+    <div  id="test1" class="card horizontal col s12 col m7 col l12 card-users">
+      <div class="card-image">
+        <img id="photo-news" src="../assets/images/chef2.jpg">
       </div>
-      <hr>
-      <div class="option col l6">
-        <p class="action">Foto/Video</p>
-        <p class="action">Restaurantes</p>
-        <p class="action">Recetas</p>
-      </div>
-      <div class="row input">
-        <form class="col l12">
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Qué quieres compartir?</label>
-              <a class="waves-effect waves-light btn">Publicar</a>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="publish"></div>
-      <form class="file" action="#">
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>Subir foto</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-          </div>
+      <div class="card-stacked">
+        <div class="card-content">
+         <p>Braulio Chef</p>
+         <p>Visité uno de los mejores restaurantes Mexicanos</p>
+         <a href="http://www.fridakahlorestaurante.com/">Restaurante FRIDA KAHLO</a>
         </div>
-      </form>
-      <div class="publish-photo"></div>
+      <div class="card-action">
+        <a class="waves-effect waves-light btn"><i class="material-icons left">star_border</i>button</a>
+        <a class="another-user" href="#">Visitar Perfil</a>
+      </div>
+      </div>
     </div>
 
-    <div id="test1" class="show-on-medium hide-on-small-only hide-on-large-only col m12">
-      <div class="user">
-        <img id="user_photo" class="responsive-img" src="../assets/images/chef.jpg">
-        <p>Tania</p>
-        <p>Amante de todo tipo de Comida</p>
+    <div id="test2" class="card hide-on-small-only col  m12 col l12 card-friends">
+      <i class="material-icons prefix">search</i>
+      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+      <div class="card-image waves-effect waves-block waves-light col s12 col m12 col l12">
+        <img class="activator" id="photo-friends" src="../assets/images/chef2.jpg">
       </div>
-      <hr>
-      <div class="option-m">
-        <p class="action">Foto/Video</p>
-        <p class="action">Restaurantes</p>
-        <p class="action">Recetas</p>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Braulio Chef<i class="material-icons right"></i></span>
+        <p><a class="another-user" href="#">Visitar Perfil</a></p>
+        <a class="waves-effect waves-light btn"><i class="material-icons left">delete_forever</i>Eliminar</a>
       </div>
-      <div class="row input-m">
-        <form class="col l12">
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Qué quieres compartir?</label>
-              <a class="waves-effect waves-light btn">Publicar</a>
-            </div>
-          </div>
-        </form>
+      <div class="card-image waves-effect waves-block waves-light col s12 col m12 col l12">
+        <img class="activator" id="photo-friends" src="../assets/images/chef3.jpg">
       </div>
-      <div class="publish"></div>
-      <form class="file-m" action="#">
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>Subir foto</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-          </div>
-        </div>
-      </form>
-      <div class="publish-photo"></div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Cassandra<i class="material-icons right"></i></span>
+        <p><a class="another-user" href="#">Visitar Perfil</a></p>
+        <a class="waves-effect waves-light btn"><i class="material-icons left">delete_forever</i>Eliminar</a>
+      </div>
     </div>
 
-    <div id="test1" class="show-on-small hide-on-med-only hide-on-large-only col s12">
-      <div class="user">
-        <img id="user_photo" class="responsive-img" src="../assets/images/chef.jpg">
-        <p>Tania</p>
-        <p>Amante de todo tipo de Comida</p>
+    <div id="test2" class="hide-on-med-only hide-on-large-only card col s12">
+      <i class="material-icons prefix">search</i>
+      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+      <div class="card-image waves-effect waves-block waves-light col s12 col m12 col l12">
+        <img class="activator" id="photo-friends" src="../assets/images/chef2.jpg">
       </div>
-      <hr>
-      <div class="option-s">
-        <p class="action">Foto/Video</p>
-        <p class="action">Restaurantes</p>
-        <p class="action">Recetas</p>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Braulio Chef<i class="material-icons right"></i></span>
+        <p><a class="another-user" href="#">Visitar Perfil</a></p>
+        <a class="waves-effect waves-light btn"><i class="material-icons left">delete_forever</i>Eliminar</a>
       </div>
-      <div class="row input-s">
-        <form class="col l12">
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Qué quieres compartir?</label>
-              <a class="waves-effect waves-light btn">Publicar</a>
-            </div>
-          </div>
-        </form>
+      <div class="card-image waves-effect waves-block waves-light col s12 col m12 col l12">
+        <img class="activator" id="photo-friends" src="../assets/images/chef3.jpg">
       </div>
-      <div class="publish"></div>
-      <form class="file-s" action="#">
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>Subir foto</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-          </div>
-        </div>
-      </form>
-      <div class="publish-photo"></div>
-    </div>
-
-
-    <div id="test2" class="col s12">
-      Test 2
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Cassandra<i class="material-icons right"></i></span>
+        <p><a class="another-user" href="#">Visitar Perfil</a></p>
+        <a class="waves-effect waves-light btn"><i class="material-icons left">delete_forever</i>Eliminar</a>
+      </div>
     </div>
 
     <div id="test3" class="col s12">
