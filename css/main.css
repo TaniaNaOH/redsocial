@@ -1,6 +1,8 @@
 
-
-
 body {
-  background-color: orange;
+  background-color: white;
+}
+
+.parallax-container {
+  height: 300px;
 }
