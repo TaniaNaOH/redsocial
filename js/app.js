@@ -1,18 +1,23 @@
-$(document).ready(function(){
-    $('.parallax').parallax();
-    $('ul.tabs').tabs('select_tab', 'tab_id');
-  });
-
-  $(document).ready(function(){
-     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-     $('.modal').modal();
-   });
-=======
-
 var $name = $('#name');
 var $password = $('#password');
+var $textarea = $('#textarea1');
 
 $(document).ready(function(){
+  $('ul.tabs').tabs('select_tab', 'tab_id');
+  $('.parallax').parallax();
+  $('.modal').modal();
+  $name.keyup(validate);
+  $password.keyup(validate);
+  $textarea.keyup(publish);
+});
+
+var validate = function(){
+  if ($('#name').val().trim().length>0 && $('#password').val().trim().length>0){
+    $('#enter').removeClass('disabled');
+  } else {
+    $('#enter').addClass('disabled', true);
+  };
+  
  $('ul.tabs').tabs('select_tab', 'tab_id');
  $('.parallax').parallax();
  $name.keyup(validate);
@@ -25,7 +30,31 @@ var validate = function(){
  } else {
    $('#enter').attr('disabled', true);
  };
+
 };
+
+var publish = function(){
+  if ($('#textarea1').val().trim().length>1){
+    $('#publish').removeAttr('disabled');
+  } else{
+    $('#publish').attr('disabled', true);
+  }
+};
+paintTextarea();
+
+var paintTextarea = function(){
+
+  var $container = $("<div />"), {"class":"row"};
+  var $div = $("<div />"), {"class":"col l12 col s12"};
+  var $p = $("<p />"), {"class":"published"};
+
+  $container.append($div);
+  $container.append($p);
+  $("#publish_user").prepend($container);
+
+}
+
+
 
 
 
