@@ -5,6 +5,7 @@ var $textarea = $('#textarea1');
 $(document).ready(function(){
   $('ul.tabs').tabs('select_tab', 'tab_id');
   $('.parallax').parallax();
+  $('.modal').modal();
   $name.keyup(validate);
   $password.keyup(validate);
   $textarea.keyup(publish);
@@ -16,6 +17,20 @@ var validate = function(){
   } else {
     $('#enter').addClass('disabled', true);
   };
+  
+ $('ul.tabs').tabs('select_tab', 'tab_id');
+ $('.parallax').parallax();
+ $name.keyup(validate);
+ $password.keyup(validate);
+});
+
+var validate = function(){
+ if ($(this).val().trim().length>0){
+   $('#enter').removeAttr('disabled');
+ } else {
+   $('#enter').attr('disabled', true);
+ };
+
 };
 
 var publish = function(){
@@ -38,9 +53,6 @@ var paintTextarea = function(){
   $("#publish_user").prepend($container);
 
 }
-
-
-
 
 
 
