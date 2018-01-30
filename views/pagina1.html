@@ -17,12 +17,15 @@
     <img src="../assets/images/user.png" class="user" alt="">
     <h4>INICIA SESION</h4>
     <form>
-      <p>Email</p>
-      <input type="text" name="" placeholder=" Introduzca su e-mail ">
-      <p>Contraseña</p>
-      <input type="text" name="" placeholder="Introduzca su contraseña ">
-      <input type="submit" name="" placeholder="........">
-      <a class="waves-effect pink btn modal-trigger" href="#"> ¡Registrate! </a>
+
+      <label for="name">Usuario</label>
+      <input type="text" id="name" name="Name" placeholder="Introduzca tu usuario">
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Introduzca su contraseña">
+
+      <button id="enter" type="submit" href="newsfeed.html" disabled>Entrar</button>
+
 
        <!-- Modal Structure -->
        <div id="modal1" class="modal">
@@ -39,6 +42,7 @@
   </div>
 </div>
 </div>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
