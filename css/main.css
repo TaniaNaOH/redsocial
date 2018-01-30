@@ -1,92 +1,21 @@
-#user_photo{
-  margin: 0 auto;
-  margin-top: 5vh;
-  height: 50vh;
-  border: 1px solid black;
-}
-#photo-news{
-  margin: 0 auto;
-  margin-top: 5vh;
-  height: 30vh;
-  border: 1px solid black;
-}
-#photo-friends{
-  margin-top: 5vh;
-  height: 50vh;
-  border: 1px solid black;
-  width: 90%;
-}
-.user{
-  text-align: center;
-  font-size: 1.5em;
-  font-family: 'Kadwa', serif;
-}
-hr{
-  width: 80%;
-  background-color: #f4ede6;
-}
-.background-header{
-  background-color: orange;
-  font-family: 'Kadwa', serif;
-}
-.action{
-  background-color: #f4ede6;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: 'Kadwa', serif;
-  font-size: 1.5em;
 
+body {
+  background-image:url(../assets/images/foodheart.jpg);
+  	background-size:cover;
+    background-position:center;
 }
-.action:hover{
-  border-bottom: 5px solid orange;
-  background-color: #ffb24f;
+
+.parallax-container {
+  height: 300px;
 }
-.option{
-  margin-left: 20vh;
-  margin-right: 150vh;
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-.option-m{
-  margin-left: 15vh;
-  margin-right: 80vh;
-}
-.option-s{
-  margin-left: 5vh;
-  display: inline-block;
-}
-.input{
-  margin-left: 50vh;
-  margin-right: 50vh;
-}
-.file{
-  margin-left: 53vh;
-  margin-right: 50vh;
-}
-.input-m{
-  margin-left: 60vh;
-}
-.file-m{
-  margin-left: 63vh;
-  margin-right: 10vh;
-}
-.input-s{
-  margin-left: 5vh;
-}
-.file-s{
-  margin-left: 8vh;
-  margin-right: 5vh;
-}
-.card-users{
-  margin-top: 15vh;
-  margin-left: 5vh;
-  margin-right: 10vh;
-  width: 90%;
-}
-.another-user{
-  float: right;
-}
-.card-friends{
-  margin-top: 15vh;
-  margin-left: 5vh;
-  margin-right: 10vh;
-  width: 50%;
+
+main {
+  flex: 1 0 auto;
 }
