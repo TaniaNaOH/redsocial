@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="../css/form.css">
   </head>
 <body>
-  <div class="loginBox responsive-img">
+
+<div class="loginBox">
+  <div class="container">
+    <div class="row">
+    <div class="col s12 l12">
     <img src="../assets/images/user.png" class="user" alt="">
     <h4>INICIA SESION</h4>
     <form>
@@ -18,10 +22,23 @@
       <p>Contraseña</p>
       <input type="text" name="" placeholder="Introduzca su contraseña ">
       <input type="submit" name="" placeholder="........">
+      <a class="waves-effect pink btn modal-trigger" href="#"> ¡Registrate! </a>
 
-      <a href="#"> ¡Registrate ahora! </a>
+       <!-- Modal Structure -->
+       <div id="modal1" class="modal">
+         <div class="modal-content">
+           <h4>Modal Header</h4>
+           <p>A bunch of text</p>
+         </div>
+         <div class="modal-footer">
+           <a href="#!" class="modal-action modal-close waves-effect waves-white btn-flat">Agree</a>
+         </div>
+       </div>
     </form>
   </div>
+  </div>
+</div>
+</div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
