@@ -38,10 +38,18 @@
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">Qué quieres compartir?</label>
-              <a class="waves-effect waves-light btn">Publicar</a>
+              <button id="publish" type="btn" class="waves-effect waves-light btn" name="button" disabled>Publicar</button>
+              <!-- <a id="publish" class="waves-effect waves-light btn">Publicar</a> -->
             </div>
           </div>
         </form>
+
+        <div id="publish_user" class="row">
+          <div class="col l12 s12">
+            <p class="published"> </p>
+          </div>
+        </div>
+
       </div>
       <div class="publish"></div>
       <form class="file" action="#">
