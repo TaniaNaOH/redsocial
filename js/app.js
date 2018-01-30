@@ -1,4 +1,5 @@
 
+
 var $name = $('#name');
 var $password = $('#password');
 
@@ -32,3 +33,7 @@ var validate = function(){
   //   messagingSenderId: "703106499379"
   // };
   // firebase.initializeApp(config);
+
+ 
+
+

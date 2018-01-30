@@ -65,7 +65,8 @@ text-align: center;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.loginBox input[type="submit"]{
+.loginBox input[type="submit"]
+{
   border: none;
   outline: none;
   height: 40px;
